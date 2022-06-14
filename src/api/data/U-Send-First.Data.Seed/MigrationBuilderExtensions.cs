@@ -9,12 +9,12 @@ namespace Microsoft.EntityFrameworkCore.Migrations
             migrationBuilder.InsertData("Users",
                                         new string[]
                                         {
-                                            "Id","UserName","EMail","Password","CreatedAt","CreatedBy","ModifiedAt","ModifiedBy",
+                                            "Id","UserName","EMail","Password","Hash","CreatedAt","CreatedBy","ModifiedAt","ModifiedBy",
                                         },
                                         new object[,]
                                         {
-                                            {ConstantIds.User.AdminId,"admin","admin@usendfirst.com","123!",DateTime.Now,ConstantIds.User.AdminId,DateTime.Now,ConstantIds.User.AdminId},
-                                            {ConstantIds.User.TestUserId,"Jim","jim@usendfirst.com","123!",DateTime.Now,ConstantIds.User.AdminId,DateTime.Now,ConstantIds.User.AdminId }
+                                                            {ConstantIds.User.AdminId,"admin","admin@usendfirst.com","892e19bfe5c847e90a9e51416340539f678a6d6ed396ec0e8957f2a47f20849b","AdminHashValue!",DateTime.Now,ConstantIds.User.AdminId,DateTime.Now,ConstantIds.User.AdminId},
+                                            {ConstantIds.User.TestUserId,"Jim","jim@usendfirst.com","4de3326c69644f2aab7542938d819571f97dee0b3aaf004f24d94fcd4adf084c","testUserPasswordHash", DateTime.Now,ConstantIds.User.AdminId,DateTime.Now,ConstantIds.User.AdminId }
                                         },
                                         schema: "Profile");
         }
@@ -37,3 +37,8 @@ namespace Microsoft.EntityFrameworkCore.Migrations
         }
     }
 }
+
+/*
+ AdminPassword = 123. => encryption algorithm has been applied for user's password so that it is not directly visible in the database table
+ JimPassword = 123. 
+ */

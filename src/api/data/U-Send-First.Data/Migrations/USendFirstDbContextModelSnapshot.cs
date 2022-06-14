@@ -79,6 +79,9 @@ namespace U_Send_First.Data.Migrations
                         .HasMaxLength(64)
                         .HasColumnType("nvarchar(64)");
 
+                    b.Property<string>("Hash")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("ModifiedAt")
                         .HasColumnType("datetime2");
 
@@ -86,8 +89,8 @@ namespace U_Send_First.Data.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Password")
-                        .HasMaxLength(36)
-                        .HasColumnType("nvarchar(36)");
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
 
                     b.Property<string>("UserName")
                         .IsRequired()
@@ -102,17 +105,12 @@ namespace U_Send_First.Data.Migrations
             modelBuilder.Entity("U_Send_First.Entities.Media.Message", b =>
                 {
                     b.HasOne("U_Send_First.Entities.Profile.User", "User")
-                        .WithMany("Message")
+                        .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("User");
-                });
-
-            modelBuilder.Entity("U_Send_First.Entities.Profile.User", b =>
-                {
-                    b.Navigation("Message");
                 });
 #pragma warning restore 612, 618
         }

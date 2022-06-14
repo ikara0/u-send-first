@@ -7,8 +7,8 @@ using U_Send_First.Data.Dto;
 
 namespace U_Send_First.Data.Services.Abstractions
 {
-    public interface IUserService
+    public interface IMessageService
     {
-        UserResultDto SignIn(SignInUserDto dto);
+        List<MessageListDto> GetMessageByUserId(Guid id);
     }
 }

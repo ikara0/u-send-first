@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace U_Send_First.Data.Migrations
 {
-    public partial class Initial : Migration
+    public partial class initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -23,7 +23,8 @@ namespace U_Send_First.Data.Migrations
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(24)", maxLength: 24, nullable: false),
                     EMail = table.Column<string>(type: "nvarchar(64)", maxLength: 64, nullable: false),
-                    Password = table.Column<string>(type: "nvarchar(36)", maxLength: 36, nullable: true),
+                    Password = table.Column<string>(type: "nvarchar(128)", maxLength: 128, nullable: true),
+                    Hash = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     ModifiedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     ModifiedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),

@@ -1,3 +1,3 @@
 Add-Migration [---Migration Name---] -P U-Send-First.Data -C USendFirstDbContext -S U-Send-First.Api
 --------------
-Update-Database -P U-Send-First.Data -Context USendFirstDbContextt -S U-Send-First.Api
+Update-Database -P U-Send-First.Data -Context USendFirstDbContext -S U-Send-First.Api
