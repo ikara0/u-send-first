@@ -5,7 +5,7 @@ VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{0E03C7BC-FBE3-4B86-9F4B-7A10CB39AE60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "U-Send-First.Api", "api\U-Send-First.Api\U-Send-First.Api.csproj", "{57AE0AEB-A43E-4941-8E57-8385F6C93632}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "U-Send-First.Api", "api\U-Send-First.Api\U-Send-First.Api.csproj", "{57AE0AEB-A43E-4941-8E57-8385F6C93632}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_docs", "_docs", "{5C8FDFE3-3A6E-46C0-9551-83E400583101}"
 	ProjectSection(SolutionItems) = preProject
@@ -14,17 +14,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_docs", "_docs", "{5C8FDFE3
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{EF6963CE-936B-4AA7-8B86-B873988CCC96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "U-Send-First.Data", "data\U-Send-First.Data\U-Send-First.Data.csproj", "{A58D655E-8233-4F81-B3A6-11F812B4545E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "U-Send-First.Data", "data\U-Send-First.Data\U-Send-First.Data.csproj", "{A58D655E-8233-4F81-B3A6-11F812B4545E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "U-Send-First.Entities", "data\U-Send-First.Entities\U-Send-First.Entities.csproj", "{B77C2114-A5D0-44C7-A2BE-91BF68B49531}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "U-Send-First.Entities", "data\U-Send-First.Entities\U-Send-First.Entities.csproj", "{B77C2114-A5D0-44C7-A2BE-91BF68B49531}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{6A693B8E-68F0-4F6F-A4FC-F1E7640B1374}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "U-Send-First.Common", "common\U-Send-First.Common\U-Send-First.Common.csproj", "{2CDDD2F3-6371-4624-A953-2BE4BFD8222D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "U-Send-First.Common", "common\U-Send-First.Common\U-Send-First.Common.csproj", "{2CDDD2F3-6371-4624-A953-2BE4BFD8222D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{437CF01D-BF00-4E3D-B963-E1B7EC596B54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "U-Send-First.Data.Seed", "data\U-Send-First.Data.Seed\U-Send-First.Data.Seed.csproj", "{470AE929-FBE5-4628-9ABA-BBED7C374D58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "U-Send-First.Data.Seed", "data\U-Send-First.Data.Seed\U-Send-First.Data.Seed.csproj", "{470AE929-FBE5-4628-9ABA-BBED7C374D58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "U-Send-First.Data.Services", "U-Send-First.Data.Services\U-Send-First.Data.Services.csproj", "{6FE468CE-1D8A-4555-BEE6-6AA4759FFFF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -52,6 +54,10 @@ Global
 		{470AE929-FBE5-4628-9ABA-BBED7C374D58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{470AE929-FBE5-4628-9ABA-BBED7C374D58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{470AE929-FBE5-4628-9ABA-BBED7C374D58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FE468CE-1D8A-4555-BEE6-6AA4759FFFF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FE468CE-1D8A-4555-BEE6-6AA4759FFFF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FE468CE-1D8A-4555-BEE6-6AA4759FFFF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FE468CE-1D8A-4555-BEE6-6AA4759FFFF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +68,7 @@ Global
 		{B77C2114-A5D0-44C7-A2BE-91BF68B49531} = {EF6963CE-936B-4AA7-8B86-B873988CCC96}
 		{2CDDD2F3-6371-4624-A953-2BE4BFD8222D} = {6A693B8E-68F0-4F6F-A4FC-F1E7640B1374}
 		{470AE929-FBE5-4628-9ABA-BBED7C374D58} = {EF6963CE-936B-4AA7-8B86-B873988CCC96}
+		{6FE468CE-1D8A-4555-BEE6-6AA4759FFFF2} = {437CF01D-BF00-4E3D-B963-E1B7EC596B54}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C30B48F9-7F2E-42D4-A839-AF7078B7ABEE}

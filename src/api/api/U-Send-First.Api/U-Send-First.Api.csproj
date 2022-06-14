@@ -16,12 +16,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\common\U-Send-First.Common\U-Send-First.Common.csproj" />
     <ProjectReference Include="..\..\data\U-Send-First.Data\U-Send-First.Data.csproj" />
+    <ProjectReference Include="..\..\U-Send-First.Data.Services\U-Send-First.Data.Services.csproj" />
   </ItemGroup>
 
 </Project>
