@@ -1,0 +1,309 @@
+{
+	"info": {
+		"_postman_id": "f3978025-9ac7-4061-8563-31b5090094d1",
+		"name": "USendFirstApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://localhost:6000/api/message/list/8E006022-46A9-4854-9F3B-36CEC56A796D",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:6000/api/message/list/8E006022-46A9-4854-9F3B-36CEC56A796D",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"api",
+						"message",
+						"list",
+						"8E006022-46A9-4854-9F3B-36CEC56A796D"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://localhost:6000/api/message/list/8E006022-46A9-4854-9F3B-36CEC56A796D",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:6000/api/message/list/8E006022-46A9-4854-9F3B-36CEC56A796D",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"message",
+								"list",
+								"8E006022-46A9-4854-9F3B-36CEC56A796D"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Jun 2022 23:49:01 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"subject\": \"Hi Friend\",\n        \"content\": \"Just wanted to let you know I'm good\",\n        \"isRead\": false\n    },\n    {\n        \"subject\": \"Job Alert\",\n        \"content\": \"Hey ! Check out this job posting!\",\n        \"isRead\": true\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "https://localhost:6000/api/message/list/6CAF93D2-614A-41B3-AD12-61F654FD8106",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:6000/api/message/list/6CAF93D2-614A-41B3-AD12-61F654FD8106",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"api",
+						"message",
+						"list",
+						"6CAF93D2-614A-41B3-AD12-61F654FD8106"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://localhost:6000/api/message/list/6CAF93D2-614A-41B3-AD12-61F654FD8106",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:6000/api/message/list/6CAF93D2-614A-41B3-AD12-61F654FD8106",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"message",
+								"list",
+								"6CAF93D2-614A-41B3-AD12-61F654FD8106"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Jun 2022 23:49:26 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"subject\": \"Warning!!\",\n        \"content\": \"You have to hurry! We'll be late to the party.\",\n        \"isRead\": true\n    },\n    {\n        \"subject\": \"Hi Again\",\n        \"content\": \"Just wanted to check on you!\",\n        \"isRead\": false\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "https://localhost:6000/api/user/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"admin@usendfirst.com\",\r\n    \"password\":\"123.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:6000/api/user/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://localhost:6000/api/user/login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"admin@usendfirst.com\",\r\n    \"password\":\"123.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:6000/api/user/login",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Jun 2022 23:49:35 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"6caf93d2-614a-41b3-ad12-61f654fd8106\",\n    \"userName\": \"admin\"\n}"
+				}
+			]
+		},
+		{
+			"name": "https://localhost:6000/api/user/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"jim@usendfirst.com\",\r\n    \"password\":\"123.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:6000/api/user/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://localhost:6000/api/user/login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"jim@usendfirst.com\",\r\n    \"password\":\"123.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:6000/api/user/login",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Jun 2022 23:50:53 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"8e006022-46a9-4854-9f3b-36cec56a796d\",\n    \"userName\": \"Jim\"\n}"
+				}
+			]
+		}
+	]
+}
