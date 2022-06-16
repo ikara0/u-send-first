@@ -13,6 +13,22 @@ namespace U_Send_First.Data.Services.Concretes
             this.dbContext = dbContext;
         }
 
+        public MessageViewDto GetMessageById(Guid id)
+        {
+            var data = dbContext.Messages.SingleOrDefault(m => m.Id == id);
+            if(data == null)
+            {
+                return null;
+            }
+            var selectedMessage = new MessageViewDto
+            {
+                Subject = data.Subject,
+                Content = data.Content
+            };
+            return selectedMessage;
+
+        }
+
         public List<MessageListDto> GetMessageByUserId(Guid id)
         {
             var data = dbContext.Messages.Where(m => m.UserId == id)
@@ -47,6 +63,18 @@ namespace U_Send_First.Data.Services.Concretes
             };
 
             return data;
+        }
+
+        public bool ReadMessage(Guid id)
+        {
+            var message = dbContext.Messages.SingleOrDefault(m => m.Id == id);
+            if(message is null)
+            {
+                return false;
+            }
+            message.IsRead = true;
+            dbContext.Update(message);
+            return dbContext.SaveChanges() > 0;
         }
     }
 }

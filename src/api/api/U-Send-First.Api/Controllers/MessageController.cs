@@ -18,22 +18,44 @@ namespace U_Send_First.Api.Controllers
         public IActionResult GetUserMessages([FromRoute] Guid id)
         {
             var result = service.GetMessageByUserId(id);
-            if(result is null)
-            {
-                return NotFound();
-            }
-            return Ok(result);
-        }
-        [HttpGet("info/{id}")]
-        public IActionResult InfoForUser([FromRoute] Guid id)
-        {
-            var result = service.InfoForUser(id);
-            if(result is null)
+            if (result is null)
             {
                 return NotFound();
             }
             return Ok(result);
         }
 
+        [HttpGet("info/{id}")]
+        public IActionResult InfoForUser([FromRoute] Guid id)
+        {
+            var result = service.InfoForUser(id);
+            if (result is null)
+            {
+                return NotFound();
+            }
+            return Ok(result);
+        }
+
+        [HttpGet("get/{id}")]
+        public IActionResult GetMessageById([FromRoute] Guid id)
+        {
+            var result = service.GetMessageById(id);
+            if (result is null)
+            {
+                return NotFound();
+            }
+            return Ok(result);
+        }
+        [HttpPost("read/{id}")]
+        public IActionResult ReadMessage([FromRoute] Guid id)
+        {
+            var result = service.ReadMessage(id);
+            if (result)
+            {
+                return Ok(result);
+            }
+            return BadRequest();
+        }
     }
+    
 }

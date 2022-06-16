@@ -6,10 +6,18 @@
     aria-labelledby="exampleModalLabel"
     aria-hidden="true"
   >
+    <div v-if="isFailed" class="alert alert-warning">
+      Message could not be loaded
+    </div>
+    <div v-if="isSuccess" class="alert alert-success">
+      Message read successfully
+    </div>
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Danger Zone!</h5>
+          <span class="modal-title" id="exampleModalLabel">{{
+            this.subject
+          }}</span>
           <button
             type="button"
             class="btn-close"
@@ -17,12 +25,13 @@
             aria-label="Close"
           ></button>
         </div>
-        <div class="modal-body">Silmek istediğinize emin misiniz ?</div>
+        <div class="modal-body">{{ this.content }}</div>
         <div class="modal-footer">
           <button
             type="button"
             class="btn btn-secondary"
             data-bs-dismiss="modal"
+            v-on:click="readMessage(m.messageId)"
           >
             Close
           </button>
@@ -39,6 +48,10 @@ export default {
     return {
       instance: null,
       selectedId: null,
+      subject: null,
+      content: null,
+      isFailed: false,
+      isSuccess: false,
     };
   },
   mounted() {
@@ -50,7 +63,33 @@ export default {
     open(id) {
       this.instance.show(id);
       this.selectedId = id;
-      console.log(this.selectedId);
+      this.loadMessage(this.selectedId);
+      this.readMessage(this.selectedId);
+    },
+    loadMessage(id) {
+      this.$ajax
+        .get(`api/message/get/${id}`)
+        .then((response) => {
+          if (response.data) {
+            this.content = response.data.content;
+            this.subject = response.data.subject;
+          }
+        })
+        .catch((error) => {
+          this.isFailed = true;
+        });
+    },
+    readMessage(id) {
+      this.$ajax
+        .post(`api/message/read/${id}`)
+        .then((response) => {
+          if (response) {
+            this.isSuccess = true;
+          }
+        })
+        .catch(() => {
+          this.isFailed = true;
+        });
     },
   },
 };

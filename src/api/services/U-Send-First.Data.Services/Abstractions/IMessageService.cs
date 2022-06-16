@@ -11,5 +11,7 @@ namespace U_Send_First.Data.Services.Abstractions
     {
         List<MessageListDto> GetMessageByUserId(Guid id);
         TotalMessageInfoDto InfoForUser(Guid id);
+        MessageViewDto GetMessageById(Guid id);
+        bool ReadMessage(Guid id);
     }
 }
