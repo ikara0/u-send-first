@@ -10,5 +10,6 @@ namespace U_Send_First.Data.Services.Abstractions
     public interface IMessageService
     {
         List<MessageListDto> GetMessageByUserId(Guid id);
+        TotalMessageInfoDto InfoForUser(Guid id);
     }
 }

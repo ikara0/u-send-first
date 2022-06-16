@@ -24,6 +24,16 @@ namespace U_Send_First.Api.Controllers
             }
             return Ok(result);
         }
+        [HttpGet("info/{id}")]
+        public IActionResult InfoForUser([FromRoute] Guid id)
+        {
+            var result = service.InfoForUser(id);
+            if(result is null)
+            {
+                return NotFound();
+            }
+            return Ok(result);
+        }
 
     }
 }
