@@ -46,16 +46,22 @@ Usage of the application:
   
   ------------------------------------------------------------------------------------------------------------
   
-Bu projenin 'API' katmanı 'ASP.NetCore Web Api' ile oluşturulmuştur. 
-'Code First' anlayışı benimsenmiştir. 
-Veri işlemlerinde Microsoft.EntityFrameworkCore kütüphanesi kullanılmıtır. 
-SOLID prensiblerine uyulmuştur. 
-Front-End tarafı 'Vue.js' ile oluşturulmuştur. 
+Bu projenin 'API' katmanı ```'ASP.NetCore Web Api'``` ile oluşturulmuştur. 
+```'Code First' ``` anlayışı benimsenmiştir. 
+Veri işlemlerinde ``` Microsoft.EntityFrameworkCore``` kütüphanesi kullanılmıtır. 
+```SOLID``` prensiblerine uyulmuştur. 
+Front-End tarafı ```'Vue.js'``` ile oluşturulmuştur. 
 
 Uygulamanın kullanıma hazırlanması için gereksinimler :
+```
 -Visual Studio 2022
+```
+```
 -'SQL SERVER' ile bağlantılı herhangi bir Database uygulaması
+```
+```
 -Visual Studio Code 
+```
 
 Uygulamanın kullanımı :
 Api Katmanı için :
