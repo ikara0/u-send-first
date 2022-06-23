@@ -32,21 +32,33 @@ Usage of the application:
   
 -The data in ``` 'data/U-Send-First.Data.Seed/MigrationBuilderExtensions.cs'``` was prepared to be seed data and placed in the migration file. If desired, the data can be reproduced in accordance with the written format.
 
--Since the migration file is ready in the project, to transfer the necessary data to the database, the ```"Update-Database -P U-Send-First.Data -Context USendFirstDbContext -S U-Send-First.Api"``` command in ```'_docs/Migration.txt'``` must be copied and
-  ```
+-Since the migration file is ready in the project, to transfer the necessary data to the database, the 
+```
+"Update-Database -P U-Send-First.Data -Context USendFirstDbContext -S U-Send-First.Api"
+``` 
+command in ```'_docs/Migration.txt'``` must be copied and
   It should be pasted and run in the "Package Manager Console" section.
-  ```
+  
 -When the specified steps are taken, the API layer and database will be ready.
+
 -After completing these steps, run the application with the solid green arrow icon on the top tab. 
+
 -The API will start working without opening the browser.
-	Example user emails: "admin@usendfirst.com","jim@usendfirst.com"-passwords "123."
+
+	Example user emails: ```"admin@usendfirst.com","jim@usendfirst.com"-passwords "123."```
 
 #For the Client Layer:
--Open the 'USendFirst' folder with the 'Visual Studio Code' application.
+
+-Open the ```'USendFirst-client'``` folder with the ```'Visual Studio Code'``` application.
+
 -In the application that opens, click on the 'New Terminal' section from the 'Terminal' tab on the top tab.
--Run the 'npm install' command in the window that opens to download the necessary 'npm' files.
--After the download is complete, run the 'npm run dev' command in the same window.
--The client application will rise over the link given by 'vite', which is used as a compilation tool.
+
+-Run the ```'npm install'``` command in the window that opens to download the necessary ```'npm'``` files.
+
+-After the download is complete, run the ```'npm run dev'``` command in the same window.
+
+-The client application will rise over the link given by ```'vite'```, which is used as a compilation tool.
+
 -You can access the client application by copying the given 'url' link to the browser.
 
 -NOTE :
