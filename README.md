@@ -9,8 +9,9 @@ Front-End side is built with 'Vue.js'.
 
 
 Requirements for preparing the application for use:
-
+```
 -Visual Studio 2022
+```
 -Any Database application connected with 'SQL SERVER'
 -Visual Studio Code
 
