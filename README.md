@@ -62,7 +62,7 @@ command in ```'_docs/Migration.txt'``` must be copied and
 -You can access the client application by copying the given 'url' link to the browser.
 
 -NOTE :
-	-```'U-Send-First.Api'``` must be running for the client Application to work.
+>```'U-Send-First.Api'``` must be running for the client Application to work.
   
   ------------------------------------------------------------------------------------------------------------
   
@@ -114,15 +114,21 @@ komutu kopyalanıp ```"Package Manager Console" ```bölümüne yapıştırılıp
 
 Client Katmanı için :
 
--'USendFirst-client' klasörünü "Visual Studio Code" uygulaması ile açınız.
--Açılan uygulamada üst sekmede bulunan 'Terminal' sekmesinden 'New Terminal' bölümüne tıklayınız.
--Gerekli 'npm' dosyalarını indirmek için açılan pencerede 'npm install' komutunu çalıştırınız. 
--İndirme işlemi tamamlandıktan sonra 'npm run dev' komutunu aynı pencerede çalıştırınız. 
--Derleme aracı olarak kullanılan 'vite' nin verdiği link üzerinden client uygulaması ayağa kalkacaktır.
+-```'USendFirst-client'``` klasörünü ```"Visual Studio Code"```uygulaması ile açınız.
+
+-Açılan uygulamada üst sekmede bulunan ```'Terminal'``` sekmesinden ```'New Terminal'``` bölümüne tıklayınız.
+
+-Gerekli ```'npm'``` dosyalarını indirmek için açılan pencerede ```'npm install'``` komutunu çalıştırınız. 
+
+-İndirme işlemi tamamlandıktan sonra ```'npm run dev'``` komutunu aynı pencerede çalıştırınız. 
+
+-Derleme aracı olarak kullanılan ```'vite'``` nin verdiği link üzerinden client uygulaması ayağa kalkacaktır.
+
 -Verilen 'url' linkini browser a kopyalayarak client uygulamasına erişebilirsiniz. 
 
+
 NOT:
--'client' Uygulamasının çalışabilmesi için 'U-Send-First.Api' çalışır halde olmalıdır.
+>```'client'``` Uygulamasının çalışabilmesi için ```'U-Send-First.Api'``` çalışır halde olmalıdır.
 
 
   
