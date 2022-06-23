@@ -20,7 +20,7 @@ Requirements for preparing the application for use:
 ```
 Usage of the application:
 
-#For API Layer:
+**#For API Layer**:
 
 -Clone from the repository to your local.
 
@@ -47,7 +47,7 @@ command in ```'_docs/Migration.txt'``` must be copied and
 
 	Example user emails: "admin@usendfirst.com","jim@usendfirst.com"-passwords "123."
 
-#For the Client Layer:
+#**For the Client Layer**:
 
 -Open the ```'USendFirst-client'``` folder with the ```'Visual Studio Code'``` application.
 
@@ -85,7 +85,7 @@ Uygulamanın kullanıma hazırlanması için gereksinimler :
 
 Uygulamanın kullanımı :
 
-API Katmanı için :
+**API Katmanı için**:
 
 -Repositoriden locale klonlayınız.
 
@@ -112,7 +112,7 @@ komutu kopyalanıp ```"Package Manager Console" ```bölümüne yapıştırılıp
 -Bu adımları tamamladıktan sonra uygulamayı üst sekmede bulunan içi dolu yeşil ok simgesiyle çalıştırınız. 
 -'API' browser **açmadan** çalışmaya başlayacaktır. 
 
-Client Katmanı için :
+**Client Katmanı için**:
 
 -```'USendFirst-client'``` klasörünü ```"Visual Studio Code"```uygulaması ile açınız.
 
