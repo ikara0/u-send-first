@@ -45,7 +45,7 @@ command in ```'_docs/Migration.txt'``` must be copied and
 
 -The API will start working without opening the browser.
 
-	Example user emails: ```"admin@usendfirst.com","jim@usendfirst.com"-passwords "123."```
+	Example user emails: "admin@usendfirst.com","jim@usendfirst.com"-passwords "123."
 
 #For the Client Layer:
 
