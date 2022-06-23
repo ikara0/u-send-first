@@ -42,7 +42,7 @@
 </template>
 <script>
 export default {
-  emits: ["read"],
+  emits: ["yes"],
   name: "ReadMessage",
   data() {
     return {
@@ -64,7 +64,6 @@ export default {
       this.instance.show(id);
       this.selectedId = id;
       this.loadMessage(this.selectedId);
-      this.readMessage(this.selectedId);
     },
     loadMessage(id) {
       this.$ajax
@@ -73,10 +72,13 @@ export default {
           if (response.data) {
             this.content = response.data.content;
             this.subject = response.data.subject;
+            this.readMessage(this.selectedId);
           }
         })
         .catch((error) => {
-          this.isFailed = true;
+          if (error) {
+            this.isFailed = true;
+          }
         });
     },
     readMessage(id) {
@@ -85,6 +87,8 @@ export default {
         .then((response) => {
           if (response) {
             this.isSuccess = true;
+            this.instance.hide();
+            this.$emit("yes");
           }
         })
         .catch(() => {

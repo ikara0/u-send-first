@@ -5,6 +5,7 @@
       <a class="nav-link active" aria-current="page" href="/login">Log Out</a>
     </div>
   </nav>
+  <div v-if="isFailed" class="alert alert-warning">işlem Başarısız</div>
   <div class="row">
     <div class="col-sm-6 mt-3">
       <div v-for="m in messages" :key="m.messageId">
@@ -29,7 +30,7 @@
       </div>
     </div>
   </div>
-  <ReadMessage ref="readModal" @read="readMessage" />
+  <ReadMessage ref="readModal" @yes="readMessage" />
 </template>
 <script>
 import ReadMessage from "../views/ReadMessage.vue";
@@ -39,27 +40,37 @@ export default {
     return {
       id: null,
       messages: [],
-      selectedId: null,
+      isFailed: false,
     };
   },
   components: {
     ReadMessage,
   },
   mounted() {
-    this.id = this.$route.params.id;
-    this.$ajax
-      .get(`api/message/list/${this.id}`)
-      .then((response) => {
-        if (response.data) {
-          this.messages = response.data;
-        }
-      })
-      .catch((error) => {});
+    this.loadData();
   },
   methods: {
+    loadData() {
+      this.isFailed = false;
+      this.id = this.$route.params.id;
+      this.$ajax
+        .get(`api/message/list/${this.id}`)
+        .then((response) => {
+          if (response.data) {
+            this.messages = response.data;
+          }
+        })
+        .catch((error) => {
+          if (error) {
+            this.isFailed = true;
+          }
+        });
+    },
     read(id) {
-      this.selectedId = id;
-      this.$refs.readModal.open(this.selectedId);
+      this.$refs.readModal.open(id);
+    },
+    readMessage() {
+      this.loadData();
     },
   },
 };
