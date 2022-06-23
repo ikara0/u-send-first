@@ -21,9 +21,12 @@ Requirements for preparing the application for use:
 Usage of the application:
 
 #For API Layer:
+
 -Clone from the repository to your local.
--Run the 'U-Send-First.sln' application from the 'api' folder in the 'src' folder.
--In the opened application, set the server connection code written in the 'appsettings.Development.json' and appsettings.json files in the 'U-Send First.Api' project in the 'API' layer according to your own 'SQL SERVER' connection.
+
+-Run the ```'U-Send-First.sln'``` application from the ```'api'``` folder in the ```'src'``` folder.
+
+-In the opened application, set the server connection code written in the ``` 'appsettings.Development.json'``` and appsettings.json files in the ```'U-Send First.Api'``` project in the 'API' layer according to your own ```'SQL SERVER'```connection.
   ("Server=localhost,[port];Database=USendFirstDb;User Id=[own user id];Password=[password]")
 -The data in 'data/U-Send-First.Data.Seed/MigrationBuilderExtensions.cs' was prepared to be seed data and placed in the migration file. If desired, the data can be reproduced in accordance with the written format.
 -Since the migration file is ready in the project, to transfer the necessary data to the database, the "Update-Database -P U-Send-First.Data -Context USendFirstDbContext -S U-Send-First.Api" command in '_docs/Migration.txt' must be copied and
@@ -46,7 +49,7 @@ Usage of the application:
   
   ------------------------------------------------------------------------------------------------------------
   
-Bu projenin 'API' katmanı ```'ASP.NetCore Web Api'``` ile oluşturulmuştur. 
+Bu projenin 'API' katmanı ```'ASP.NetCore Web API'``` ile oluşturulmuştur. 
 ```'Code First' ``` anlayışı benimsenmiştir. 
 Veri işlemlerinde ``` Microsoft.EntityFrameworkCore``` kütüphanesi kullanılmıtır. 
 ```SOLID``` prensiblerine uyulmuştur. 
