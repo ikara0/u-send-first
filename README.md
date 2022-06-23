@@ -1,5 +1,5 @@
 # u-send-first
-Mail Inbox App
+**Mail Inbox App**
 
 API layer of this project was created with ```'ASP.NetCore Web API'.```
 The concept of ```'Code First' ``` has been adopted.
