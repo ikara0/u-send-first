@@ -1,20 +1,23 @@
 # u-send-first
 Mail Inbox App
 
-API layer of this project was created with 'ASP.NetCore Web API'.
-The concept of 'Code First' has been adopted.
-The 'Microsoft.EntityFrameworkCore' library is used in data processing.
-The 'SOLID' principles have been complied with.
-Front-End side is built with 'Vue.js'.
+API layer of this project was created with ```'ASP.NetCore Web API'.```
+The concept of ```'Code First' ``` has been adopted.
+The ```'Microsoft.EntityFrameworkCore' ``` library is used in data processing.
+The ``` 'SOLID' ``` principles have been complied with.
+Front-End side is built with ```'Vue.js'.```
 
 
 Requirements for preparing the application for use:
 ```
 -Visual Studio 2022
 ```
+```
 -Any Database application connected with 'SQL SERVER'
+```
+```
 -Visual Studio Code
-
+```
 Usage of the application:
 
 #For API Layer:
