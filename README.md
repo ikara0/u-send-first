@@ -51,7 +51,7 @@ command in ```'_docs/Migration.txt'``` must be copied and
 
 -Open the ```'USendFirst-client'``` folder with the ```'Visual Studio Code'``` application.
 
--In the application that opens, click on the 'New Terminal' section from the 'Terminal' tab on the top tab.
+-In the application that opens, click on the ```'New Terminal'``` section from the ```'Terminal'``` tab on the top tab.
 
 -Run the ```'npm install'``` command in the window that opens to download the necessary ```'npm'``` files.
 
