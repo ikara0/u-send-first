@@ -93,7 +93,7 @@ Uygulamanın kullanımı :
 
 -Açılan uygulamada api katmanında bulunan ```'U-Send-First.Api'``` projesinin içerisindeki ```'appsettings.Development.json'``` ve ```'appsettings.json'``` dosyalarında yazılı olan server bağlantı kodunu kendi ```'SQL SERVER'``` bağlantınıza göre ayarlayınız.
 
-	("Server=localhost,[port bilgisi];Database=USendFirstDb;User Id=[kendi kullanıcı Id'niz];Password=[şifreniz]")
+```("Server=localhost,[port bilgisi];Database=USendFirstDb;User Id=[kendi kullanıcı Id'niz];Password=[şifreniz]")```
 	
 - ```'data/U-Send-First.Data.Seed/MigrationBuilderExtensions.cs'``` içerisinde bulunan veriler seed veriler olması için hazırlanıp migration dosyası içerisine yerleştirilmiştir. istenilirse veriler yazılan formata uygun şekilde çoğaltılabilir. 
 
