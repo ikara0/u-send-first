@@ -43,7 +43,7 @@ command in ```'_docs/Migration.txt'``` must be copied and
 
 -After completing these steps, run the application with the solid green arrow icon on the top tab. 
 
--The API will start working without opening the browser.
+-The API will start working **without** opening the browser.
 
 	Example user emails: "admin@usendfirst.com","jim@usendfirst.com"-passwords "123."
 
@@ -62,7 +62,7 @@ command in ```'_docs/Migration.txt'``` must be copied and
 -You can access the client application by copying the given 'url' link to the browser.
 
 -NOTE :
-	-'U-Send-First.Api' must be running for the client Application to work.
+	-```'U-Send-First.Api'``` must be running for the client Application to work.
   
   ------------------------------------------------------------------------------------------------------------
   
@@ -84,20 +84,33 @@ Uygulamanın kullanıma hazırlanması için gereksinimler :
 ```
 
 Uygulamanın kullanımı :
-Api Katmanı için :
+
+API Katmanı için :
+
 -Repositoriden locale klonlayınız.
--'src' dosyası içerisindeki 'api' klasöründen 'U-Send-First.sln' uygulamasını çalıştırınız. 
--Açılan uygulamada api katmanında bulunan 'U-Send-First.Api' projesinin içerisindeki 'appsettings.Development.json' ve 'appsettings.json' dosyalarında yazılı olan server bağlantı kodunu kendi 'SQL SERVER' bağlantınıza göre ayarlayınız.
+
+-```'src'``` dosyası içerisindeki ```'api'``` klasöründen ```'U-Send-First.sln'``` uygulamasını çalıştırınız. 
+
+-Açılan uygulamada api katmanında bulunan ```'U-Send-First.Api'``` projesinin içerisindeki ```'appsettings.Development.json'``` ve ```'appsettings.json'``` dosyalarında yazılı olan server bağlantı kodunu kendi ```'SQL SERVER'``` bağlantınıza göre ayarlayınız.
+
 	("Server=localhost,[port bilgisi];Database=USendFirstDb;User Id=[kendi kullanıcı Id'niz];Password=[şifreniz]")
 	
-- 'data/U-Send-First.Data.Seed/MigrationBuilderExtensions.cs' içerisinde bulunan veriler seed veriler olması için hazırlanıp migration dosyası içerisine yerleştirilmiştir. istenilirse veriler yazılan formata uygun şekilde çoğaltılabilir. 
+- ```'data/U-Send-First.Data.Seed/MigrationBuilderExtensions.cs'``` içerisinde bulunan veriler seed veriler olması için hazırlanıp migration dosyası içerisine yerleştirilmiştir. istenilirse veriler yazılan formata uygun şekilde çoğaltılabilir. 
 
--Migration dosyası projenin içerisinde hazır olduğundan dolayı gerekli verileri database aktarmak için '_docs/Migration.txt' içerisindeki "Update-Database -P U-Send-First.Data -Context USendFirstDbContext -S U-Send-First.Api" komutu kopyalanıp 
-	"Package Manager Console" bölümüne yapıştırılıp çalıştırılmalıdır. 
+-Migration dosyası projenin içerisinde hazır olduğundan dolayı gerekli verileri database aktarmak için ```'_docs/Migration.txt'``` içerisindeki 
+```
+"Update-Database -P U-Send-First.Data -Context USendFirstDbContext -S U-Send-First.Api"
+```
+
+komutu kopyalanıp ```"Package Manager Console" ```bölümüne yapıştırılıp çalıştırılmalıdır. 
+
 -Belirtilen adımlar atıldığında API katmanı ve database hazır olacaktır. 
--Örnek kullanıcı mailleri : "admin@usendfirst.com","jim@usendfirst.com" şifreleri "123."
+```
+-Örnek kullanıcı mailleri :"admin@usendfirst.com","jim@usendfirst.com" şifreleri "123."
+```
+
 -Bu adımları tamamladıktan sonra uygulamayı üst sekmede bulunan içi dolu yeşil ok simgesiyle çalıştırınız. 
--'API' browser açmadan çalışmaya başlayacaktır. 
+-'API' browser **açmadan** çalışmaya başlayacaktır. 
 
 Client Katmanı için :
 
