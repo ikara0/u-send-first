@@ -68,7 +68,7 @@ command in ```'_docs/Migration.txt'``` must be copied and
   
 Bu projenin 'API' katmanı ```'ASP.NetCore Web API'``` ile oluşturulmuştur. 
 ```'Code First' ``` anlayışı benimsenmiştir. 
-Veri işlemlerinde ``` Microsoft.EntityFrameworkCore``` kütüphanesi kullanılmıtır. 
+Veri işlemlerinde ``` Microsoft.EntityFrameworkCore``` kütüphanesi kullanılmıştır. 
 ```SOLID``` prensiblerine uyulmuştur. 
 Front-End tarafı ```'Vue.js'``` ile oluşturulmuştur. 
 
