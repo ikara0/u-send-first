@@ -13,7 +13,7 @@ namespace U_Send_First.Data.Migrations
 {
     [DbContext(typeof(USendFirstDbContext))]
     [Migration("20220614224839_initial")]
-    partial class initial
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

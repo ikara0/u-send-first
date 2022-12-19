@@ -9,12 +9,16 @@ public class Message :EntityBase
 {
     [Required]
     public Guid UserId { get; set; }
+
     [Required]
     [MaxLength(1024)]
     public string Content { get; set; }
+
     [MaxLength(256)]
     public string Subject { get; set; }
+
     public bool IsRead { get; set; }
+
     [ForeignKey(nameof(UserId))]
     public User User { get; set; }
 }

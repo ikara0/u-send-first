@@ -10,10 +10,13 @@ public class User : EntityBase
     [Required]
     [MaxLength(24)]
     public string UserName { get; set; }
+
     [Required]
     [MaxLength(64)]
     public string EMail { get; set; }
+
     [MaxLength(128)]
     public string Password { get; set; }
+
     public string Hash { get; set; }
 }
